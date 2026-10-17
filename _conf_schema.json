@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "description": "启用说话人标注",
+    "type": "bool",
+    "hint": "总开关。关闭后插件不再修改任何 prompt。",
+    "default": true
+  },
+  "include_qq": {
+    "description": "前缀中附带 QQ 号",
+    "type": "bool",
+    "hint": "开启时为「昵称(QQ号): 内容」，便于模型区分同名成员；关闭时只用昵称，可减少 token 消耗。",
+    "default": true
+  },
+  "tag_private_chat": {
+    "description": "私聊也标注",
+    "type": "bool",
+    "hint": "默认关闭（私聊只有一个人，标注没有意义且占 token）。",
+    "default": false
+  },
+  "max_name_len": {
+    "description": "昵称最大长度",
+    "type": "int",
+    "hint": "超长昵称截断到该长度，0 = 不截断。防止花式昵称把前缀撑得过长。",
+    "default": 0
+  },
+  "separator": {
+    "description": "前缀分隔符",
+    "type": "string",
+    "hint": "昵称与正文之间的分隔符，默认「: 」（冒号加空格）。",
+    "default": ": "
+  }
+}

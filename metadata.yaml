@@ -1,0 +1,15 @@
+name: astrbot_plugin_sender_tag
+display_name: 群消息说话人标注
+desc: 给进入会话历史的群聊消息加「昵称(QQ号): 」前缀，解决多人共用会话历史时 LLM 分不清谁在说话、上下文接续混乱的问题。标注随会话历史持久化，后续轮次依然有效；私聊默认不标注，可配置开关、是否带 QQ 号、昵称截断与分隔符。
+short_desc: 群聊历史带说话人标注
+author: Randy Lua
+repo: https://github.com/RandyLuaW/astrbot_plugin_sender_tag
+version: 1.1.0
+astrbot_version: ">=4.17.0"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 群聊
+  - 上下文
+  - 提示词
+  - LLM
